@@ -10,22 +10,128 @@
         {
             "atomType": "Molecule",
             "name": "Frames",
-            "x": 0.2862222222222222,
-            "y": 0.40458015267175573,
+            "x": 0.28888888888888886,
+            "y": 0.38167938931297707,
             "uniqueID": 997318,
             "ioValues": [],
             "topLevel": false,
             "allAtoms": [
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 0.4115555555555555,
+                    "y": 0.2099236641221374,
+                    "uniqueID": 547916,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": "atoms/899327/997318/219620Circle"
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 150
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 100
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Circle",
+                    "name": "Circle",
+                    "x": 0.3022222222222222,
+                    "y": 0.46183206106870234,
+                    "uniqueID": 219620,
+                    "ioValues": [
+                        {
+                            "name": "diameter",
+                            "ioValue": 20
+                        }
+                    ]
+                },
+                {
+                    "atomType": "ShrinkWrap",
+                    "name": "Shrink Wrap",
+                    "x": 0.7075555555555556,
+                    "y": 0.3473282442748092,
+                    "uniqueID": 583749,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": "atoms/899327/997318/219620Circle"
+                        },
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": "atoms/899327/997318/547916Translate"
+                        },
+                        {
+                            "name": "3D shape 3",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "3D shape 1",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 2",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 3",
+                            "ioValue": 10
+                        }
+                    ],
+                    "closedSelection": 0
+                },
                 {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 0.9822222222222223,
                     "y": 0.5,
                     "uniqueID": 807203,
-                    "ioValues": []
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "atoms/899327/997318/583749ShrinkWrap"
+                        }
+                    ]
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 547916,
+                    "ap2ID": 583749
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 219620,
+                    "ap2ID": 583749
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 219620,
+                    "ap2ID": 547916
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 583749,
+                    "ap2ID": 807203
+                }
+            ],
             "fileTypeVersion": 1,
             "simplify": false
         },
